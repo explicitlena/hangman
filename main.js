@@ -36,6 +36,7 @@ function displayWord() {
 
     if (innerWord === selectedWord) {
         finalMessage.innerText = 'Congratulations! You won! 😃';
+        finalMessageRevealWord.innerText = `...the word was: ${selectedWord}`;
         popup.style.display = 'flex';
 
         playable = false;
