@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Hangman</h1>
-    <p>Find the hidden word - Enter a letter</p>
+    <p>Find the hidden word - Enter a letter on your keyboard</p>
     <div class="game-container">
       <svg height="250" width="200" class="figure-container">
         <!-- Rod -->
@@ -36,6 +36,13 @@
 
       <div class="word" id="word"></div>
     </div>
+<!-- hint and new word buttons -->
+    <div class="buttons">
+    <button id="new-word-button">New word</button>
+    <button id="hint-button">Hint</button>
+    <p id="hintTxt"></p>
+  </div>
+
 
     <!-- Container for final message -->
     <div class="popup-container" id="popup-container">
@@ -50,7 +57,6 @@
     <div class="notification-container" id="notification-container">
       <p>You have already entered this letter</p>
     </div>
-
     <script src="main.js"></script>
   </body>
 </html>
