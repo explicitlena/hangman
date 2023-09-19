@@ -12,14 +12,26 @@
     height: 80vh;
     margin: 0;
     overflow: hidden;
+    animation: fadeIn 3s ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
-  
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   h1 {
-    margin: 20px 0 0;
+    margin: 60px 0 0;
   }
   
   .game-container {
-    padding: 20px 30px;
+    padding: 20px 20px;
     position: relative;
     margin: auto;
     height: 350px;
@@ -72,7 +84,36 @@
     height: 50px;
     width: 20px;
   }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+         
+  #hint-button, #new-word-button {
+    background-image: linear-gradient(to right, #000000 0%, #53346D  51%, #000000  100%);
+    margin: 20px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+  }
+
+  #hint-button:hover ,
+  #new-word-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
   
+
+
+
+
   .popup-container {
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;

@@ -150,7 +150,9 @@ newWordBtn.addEventListener('click', () => {
 // Hint button, click to get a hint
 hintBtn.addEventListener('click', () => {
         var hint = document.getElementById("hintTxt");
-        hint.innerHTML = "There are only computer related words";
+        hint.innerHTML = '💡 There are only computer related words.  ( ˘ ͜ʖ ˘)';
+        hintBtn.textContent = 'Hint used';
     }
 );
+
 
